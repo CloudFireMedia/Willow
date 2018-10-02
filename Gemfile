@@ -20,10 +20,6 @@ gem 'closure-compiler', '~> 1.1.14'
 gem 'image_optim_rails', '~> 0.4.1'
 gem 'image_optim_pack', '~> 0.5.1'
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails', '~> 4.3.3'
-# Bootstrap
-gem 'bootstrap', '~> 4.1.3'
 # Call Ruby code and manipulate Ruby objects from JavaScript.
 gem 'therubyracer', '~> 0.12.3'
 # LESS

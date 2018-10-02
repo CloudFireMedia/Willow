@@ -25,7 +25,7 @@ Rails.application.configure do
   # Compress JavaScripts, CSS and Images.
   config.assets.js_compressor = Closure::Compiler.new(:compilation_level => 'ADVANCED_OPTIMIZATIONS')
   config.assets.css_compressor = YUI::CssCompressor.new()
-  config.assets.image_optim = ImageOptim.new(nice: 20, pngout: false, svgo: false)
+  config.assets.image_optim = ImageOptim.new(nice: 10, pngout: false, svgo: false)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
