@@ -9,13 +9,25 @@ gem 'rails', '~> 5.2.1'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# Yui-compressor
+gem 'yui-compressor', '~> 0.12.0'
+# Google Closure
+gem 'closure-compiler', '~> 1.1.14'
+# Images compressor (jpeg, png, gif, svg)
+gem 'image_optim_rails', '~> 0.4.1'
+gem 'image_optim_pack', '~> 0.5.1'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.3.3'
+# Bootstrap
+gem 'bootstrap', '~> 4.1.3'
+# Call Ruby code and manipulate Ruby objects from JavaScript.
+gem 'therubyracer', '~> 0.12.3'
+# LESS
+gem 'less-rails', '~> 3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
