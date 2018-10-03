@@ -1,12 +1,12 @@
-<div class="nav nav-tabs justify-content-center" role="tablist">
+<div class="nav nav-tabs justify-content-center pt-3" role="tablist">
   <a id="folders-tab" class="nav-item nav-link active" href="#folders" data-toggle="tab" role="tab" aria-controls="folders" aria-selected="true">Folders</a>
   <a id="trash-tab" class="nav-item nav-link" href="#trash" data-toggle="tab" role="tab" aria-controls="trash" aria-selected="false">Trash</a>
   <a id="info-tab" class="nav-item nav-link" href="#info" data-toggle="tab" role="tab" aria-controls="info" aria-selected="false">Info</a>
 </div>
-<div class="tab-content">
+<div class="tab-content pt-3 pl-3 pr-3">
   <div id="folders" class="tab-pane fade show active" role="tabpanel" aria-labelledby="folders-tab">
-    <div class="row">
-      <div class="col-4">
+    <div class="row h-100">
+      <div class="col-5">
         <div class="card">
           <div class="card-header">
             Folders
@@ -15,23 +15,56 @@
             list of folders
           </div>
           <div class="card-footer">
-            footer menu
+            <div class="btn-group">
+              <a class="btn btn-secondary p-1" href="#" role="button">
+                <i class="far fa-plus fa-fw"></i>
+              </a>
+              <a class="btn btn-secondary p-1" href="#" role="button">
+                <i class="far fa-minus fa-fw"></i>
+              </a>
+            </div>
+            <a class="btn btn-secondary p-1" href="#" role="button">
+              <i class="far fa-eye fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-7">
         <div class="card">
           <div class="card-header">
             Rules
           </div>
-          <div class="card-body">
-            list of rules
+          <div class="card-body p-0">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item form-check pl-5">
+                <input id="rule_1" class="form-check-input" type="checkbox" value="1"/>
+                <label class="form-check-label" for="rule_1">Rule 1</label>
+              </div>
+              <div class="list-group-item form-check pl-5">
+                <input id="rule_2" class="form-check-input" type="checkbox" value="2"/>
+                <label class="form-check-label" for="rule_2">Rule 2</label>
+              </div>
+              <div class="list-group-item form-check pl-5">
+                <input id="rule_3" class="form-check-input" type="checkbox" value="3"/>
+                <label class="form-check-label" for="rule_3">Rule 3</label>
+              </div>
+            </div>
           </div>
           <div class="card-footer">
-            footer menu
+            <div class="btn-group">
+              <a class="btn btn-secondary p-1" href="#" role="button">
+                <i class="far fa-plus fa-fw"></i>
+              </a>
+              <a class="btn btn-secondary p-1" href="#" role="button">
+                <i class="far fa-minus fa-fw"></i>
+              </a>
+            </div>
+            <a class="btn btn-secondary p-1" href="#" role="button">
+              <i class="far fa-pen fa-fw"></i>
+            </a>
           </div>
         </div>
-        <div class="card">
+        <div class="card mt-3">
           <div class="card-header">
             Throw away
           </div>
