@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Willow</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <title>Willow</title>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- CSS -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <!-- JavaScript -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <%= yield %>
+</body>
 </html>
