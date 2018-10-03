@@ -1,10 +1,51 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      Left col
+<div class="nav nav-tabs justify-content-center" role="tablist">
+  <a id="folders-tab" class="nav-item nav-link active" href="#folders" data-toggle="tab" role="tab" aria-controls="folders" aria-selected="true">Folders</a>
+  <a id="trash-tab" class="nav-item nav-link" href="#trash" data-toggle="tab" role="tab" aria-controls="trash" aria-selected="false">Trash</a>
+  <a id="info-tab" class="nav-item nav-link" href="#info" data-toggle="tab" role="tab" aria-controls="info" aria-selected="false">Info</a>
+</div>
+<div class="tab-content">
+  <div id="folders" class="tab-pane fade show active" role="tabpanel" aria-labelledby="folders-tab">
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            Folders
+          </div>
+          <div class="card-body">
+            list of folders
+          </div>
+          <div class="card-footer">
+            footer menu
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="card">
+          <div class="card-header">
+            Rules
+          </div>
+          <div class="card-body">
+            list of rules
+          </div>
+          <div class="card-footer">
+            footer menu
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            Throw away
+          </div>
+          <div class="card-body">
+            list of options
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      Right col
-    </div>
+  </div>
+  <div id="trash" class="tab-pane fade" role="tabpanel" aria-labelledby="trash-tab">
+    Trash
+  </div>
+  <div id="info" class="tab-pane fade" role="tabpanel" aria-labelledby="info-tab">
+    Info
   </div>
 </div>
