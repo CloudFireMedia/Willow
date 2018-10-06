@@ -23,7 +23,7 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts, CSS and Images.
-  config.assets.js_compressor = Closure::Compiler.new(:compilation_level => 'ADVANCED_OPTIMIZATIONS')
+  #config.assets.js_compressor = Closure::Compiler.new(:compilation_level => 'ADVANCED_OPTIMIZATIONS', :language_in => 'ECMASCRIPT6')
   config.assets.css_compressor = YUI::CssCompressor.new()
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
