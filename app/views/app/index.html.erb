@@ -122,16 +122,117 @@
 
 <!-- RuleOptionsDlg -->
 <div id="rule_options" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="RuleOptionsLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">RuleOptionsDlg</h5>
+        <h5 class="modal-title" id="exampleModalLabel">[FolderName]</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        [BODY]
+        <div class="form-group row">
+          <label for="rule_name" class="col-1 col-form-label">Name:</label>
+          <div class="col-11">
+            <input id="rule_name" class="form-control" type="text" value=""/>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-9">
+            <span>If</span>
+            <select id="" class="form-control d-inline w-auto">
+              <option value="0">all</option>
+              <option value="1">any</option>
+              <option value="2">none</option>
+            </select>
+            <span>of the following conditions are met</span>
+          </div>
+          <div class="col-3 text-right">
+            <a class="btn btn-secondary" href="#" role="button">Preview</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <div class="form-inline">
+              <div class="form-group mr-2">
+                <select id="" class="form-control">
+                  <option value="0">Name</option>
+                  <option value="1">Extension</option>
+                  <option value="2">Full Name</option>
+                </select>
+              </div>
+              <div class="form-group mr-2 w-auto">
+                <select id="" class="form-control">
+                  <option value="0">is</option>
+                  <option value="1">is not</option>
+                  <option value="2">contains</option>
+                  <option value="3">does not contain</option>
+                  <option value="4">starts with</option>
+                  <option value="5">does not start with</option>
+                  <option value="6">ends with</option>
+                  <option value="7">does not end with</option>
+                  <option value="8">matches</option>
+                  <option value="9">does not match</option>
+                  <option value="10">did change</option>
+                  <option value="11">did not change</option>
+                  <option value="12">is blank</option>
+                  <option value="13">is not blank</option>
+                </select>
+              </div>
+              <div class="form-group mr-2">
+                <input id="" class="form-control" type="text" value=""/>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 text-right">
+            <div class="form-group">
+              <div class="btn-group">
+                <a class="btn btn-secondary" href="#" role="button">
+                  <i class="far fa-plus fa-fw"></i>
+                </a>
+                <a class="btn btn-secondary" href="#" role="button">
+                  <i class="far fa-minus fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2">Do the following to the matched file or folder:</div>
+        <div class="form-group row">
+          <div class="col-9">
+            <div class="form-inline">
+              <div class="form-group mr-4">
+                <select id="" class="form-control">
+                  <option value="0">Move</option>
+                  <option value="1">Copy</option>
+                  <option value="2">Rename</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="target_folder" class="form-label mr-2">to folder:</label>
+                <select id="target_folder" class="form-control">
+                  <option value="0">111</option>
+                  <option value="1">222</option>
+                  <option value="2">333</option>
+                  <option value="2">444</option>
+                  <option value="2">555</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 text-right">
+            <div class="form-group">
+              <div class="btn-group">
+                <a class="btn btn-secondary" href="#" role="button">
+                  <i class="far fa-plus fa-fw"></i>
+                </a>
+                <a class="btn btn-secondary" href="#" role="button">
+                  <i class="far fa-minus fa-fw"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
