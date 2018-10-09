@@ -35,6 +35,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Client for accessing Google APIs
+gem 'google-api-client', '~> 0.24.2'
+# A library to read/write files/spreadsheets in Google Drive/Docs
+#gem 'google_drive', '~> 2.1', '>= 2.1.12'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
