@@ -37,8 +37,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 # A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard.
 gem 'jwt'
-# Flexible authentication solution for Rails with Warden
-gem 'devise', '~> 4.5'
 # A Google OAuth2 strategy for OmniAuth 1.x.
 gem 'omniauth-google-oauth2', '~> 0.5.3'
 # Client for accessing Google APIs
