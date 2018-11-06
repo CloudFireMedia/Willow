@@ -1,9 +1,0 @@
-<% if current_user %>
-<ul>
-	<% current_user.attributes.each do |k, v| %>
-		<li>
-			<b><%= k %>:</b> <%= v %>
-		</li>
-	<% end %>
-</ul>
-<% end %>
