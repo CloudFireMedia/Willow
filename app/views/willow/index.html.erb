@@ -1,4 +1,5 @@
 <% if current_user %>
+  <span class="ml-3"><%= current_user.email %></span>
   <a class="btn btn-primary m-3" href="/logout" role="button">Sign out</a>
   <div class="nav nav-tabs justify-content-center pt-3" role="tablist">
     <a id="folders-tab" class="nav-item nav-link active" href="#folders" data-toggle="tab" role="tab" aria-controls="folders" aria-selected="true">Folders</a>
@@ -275,7 +276,11 @@
           </button>
         </div>
         <div class="modal-body">
-          [BODY]
+          <div class="list-group">
+            <% @user_files.files.each do |user_file| %>
+              <a class="list-group-item list-group-item-action" href="#" role="button"><%= user_file.name %></a>
+            <% end %>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

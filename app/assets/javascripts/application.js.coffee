@@ -6,3 +6,11 @@
 //= require turbolinks
 //= require_tree .
 
+$ ->
+  $.ajax({
+    type: 'POST',
+    url: 'storage/root/list',
+    dataType: 'json',
+    success: (resp) ->
+      console.log(resp);
+  })
