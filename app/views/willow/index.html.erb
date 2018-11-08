@@ -276,11 +276,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="list-group">
-            <% @user_files.files.each do |user_file| %>
-              <a class="list-group-item list-group-item-action" href="#" role="button"><%= user_file.name %></a>
-            <% end %>
-          </div>
+          <div class="list-group"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
