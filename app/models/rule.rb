@@ -1,6 +1,4 @@
 class Rule < ApplicationRecord
-	belongs_to :folder
-	belongs_to :property
-	belongs_to :condition
-	belongs_to :action
+  has_many :filters, through: :rule_filter
+  has_many :actions, through: :rule_action
 end

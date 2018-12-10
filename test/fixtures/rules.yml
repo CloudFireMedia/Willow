@@ -2,16 +2,6 @@
 
 one:
   title: MyString
-  folder_id: 1
-  property_id: 1
-  condition_id: 1
-  value: MyString
-  action_id: 1
 
 two:
   title: MyString
-  folder_id: 1
-  property_id: 1
-  condition_id: 1
-  value: MyString
-  action_id: 1

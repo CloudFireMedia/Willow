@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  fid: MyString
-  storage: one
-  title: MyString
+  user: one
+  folder: one
 
 two:
-  fid: MyString
-  storage: two
-  title: MyString
+  user: two
+  folder: two

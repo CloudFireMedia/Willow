@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  fid: MyString
-  storage: one
+  name: MyString
   title: MyString
 
 two:
-  fid: MyString
-  storage: two
+  name: MyString
   title: MyString

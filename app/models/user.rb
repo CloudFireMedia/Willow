@@ -13,4 +13,6 @@ class User < ApplicationRecord
       user.save!
     end
   end
+
+  has_many :folders, through: :user_folder
 end
