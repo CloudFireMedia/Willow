@@ -17,7 +17,11 @@ class GoogleDrive
       drive.authorization = get_auth(auth_cfg)
       drive.authorization.refresh!
 
-      return drive.list_files(q: "mimeType = 'application/vnd.google-apps.folder' and '#{folder_id}' in parents and trashed = false", order_by: "name")
+      return drive.list_files(q: "mimeType = 'application/vnd.google-apps.folder' and '#{folder_id}' in parents and trashed = false", order_by: 'name')
+    end
+
+    def watch()
+      channel = Drive::Channel.new(id: uuid, type: 'web_hook', address: 'https://cracozyabra.com/notifications')
     end
   end
 end

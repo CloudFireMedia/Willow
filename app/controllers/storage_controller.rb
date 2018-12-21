@@ -30,7 +30,7 @@ class StorageController < ApplicationController
     }
   end
 
-  def get_folders
+  def storage_folders
     results = Array.new
 
     case current_user.provider
@@ -46,5 +46,33 @@ class StorageController < ApplicationController
     end
 
     render json: results_resp(results)
+  end
+
+  def my_folders
+    #
+  end
+
+  def add_folder
+    #
+  end
+
+  def delete_folder
+    #
+  end
+
+  def get_rules
+    #
+  end
+
+  def delete_rules
+    #
+  end
+
+  def add_rule
+    #
+  end
+
+  def set_rule
+    #
   end
 end

@@ -7,7 +7,7 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $('.btn[data-target="#choose_folder"]').on('click', function(e) {
+  $('#add-storage-folder-btn').on('click', function(e) {
     e.preventDefault();
 
     $.ajax({
@@ -19,11 +19,13 @@ $(document).ready(function() {
       },
       success: function(resp, textStatus, jqXHR) {
         if (resp.success) {
-          var list_el = $('#choose_folder .modal-body .list-group');
-          
+          var list_el = $('#storage-folders .modal-body');
+
           list_el.empty();
 
-          for (var file in resp.results) {
+          for (var i = 0; i < resp.results.length; i++) {
+            var file = resp.results[i];
+
             list_el.append('<a class="folder-btn list-group-item list-group-item-action" href="#" role="button" data-folder-id="' + file.id + '">' + file.name + '</a>');
           }
         }
@@ -31,7 +33,23 @@ $(document).ready(function() {
     });
   });
 
-  $('#choose_folder .folder-btn').on('click', function(e) {
+  $('#storage-folders .folder-btn').on('click', function(e) {
     e.preventDefault();
+
+    console.log($(this).data('folder'));
+
+    $.ajax({
+      type: 'POST',
+      url: 'folders/add',
+      dataType: 'json',
+      error: function(jqXHR, textStatus, errorThrown) {
+        //
+      },
+      success: function(resp, textStatus, jqXHR) {
+        if (resp.success) {
+          console.log(resp.results);
+        }
+      }
+    });
   });
 });

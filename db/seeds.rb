@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Storage
+Storage.create(name: 'GOOGLE_DRIVE', title: 'Google Drive')
+
 # Actions
 Action.create(name: 'MOVE', title: 'Move')
 Action.create(name: 'COPY', title: 'Copy')
