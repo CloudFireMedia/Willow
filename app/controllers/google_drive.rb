@@ -21,7 +21,7 @@ class GoogleDrive
     end
 
     def watch()
-      channel = Drive::Channel.new(id: uuid, type: 'web_hook', address: 'https://cracozyabra.com/notifications')
+      channel = Drive::Channel.new(id: uuid, type: 'web_hook', address: 'https://konmari.cloud/notifications')
     end
   end
 end

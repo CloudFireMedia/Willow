@@ -33,7 +33,7 @@ $(document).ready(function() {
     });
   });
 
-  $('#storage-folders .folder-btn').on('click', function(e) {
+  $('#storage-folders').on('click', '.folder-btn', function(e) {
     e.preventDefault();
 
     console.log($(this).data('folder'));

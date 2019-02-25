@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'willow', to: 'willow#index'
+  get 'privacy', to: 'willow#privacy'
 
   post 'storage/:folder_id/list', to: 'storage#storage_folders'
   #post 'storage/notifications', to: ''
